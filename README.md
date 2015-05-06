@@ -16,3 +16,9 @@ Deploy to Azure
 > Enabling end point
 
     azure vm endpoint create -n Kibana  ncp-elk-stack-1 8080 8080
+
+> Component versions
+    Elastic search: 1.5.1
+    Logstash:       1.4.2       
+    Kibana:         4.0.2 
+    Nginx:          1.9.0 
