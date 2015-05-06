@@ -19,6 +19,6 @@ Deploy to Azure
 
 > Component versions
     Elastic search: 1.5.1
-    Logstash:       1.4.2       
-    Kibana:         4.0.2 
-    Nginx:          1.9.0 
+    Logstash:       1.4.2
+    Kibana:         4.0.2
+    Nginx:          1.9.0
