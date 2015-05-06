@@ -17,7 +17,7 @@ Deploy to Azure
 
     azure vm endpoint create -n Kibana  ncp-elk-stack-1 8080 8080
 
-> Component versions
+> Tools versions
 
     Elastic search: 1.5.1
     Logstash:       1.4.2
