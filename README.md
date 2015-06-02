@@ -13,9 +13,11 @@ Deploy to Azure
     time azure vm create --vm-name=ncp-logstash-1 --ssh=22 --custom-data=cloud-config.yaml --ssh-cert=go-agent-cert.pem --no-ssh-password --location="West US" --vm-size="Small" --virtual-network-name=elk-stack-vnet --subscription="Test Salto" --connect ncp-logstash 2b171e93f07c4903bcad35bda10acf22__CoreOS-Stable-607.0.0 ncpadmin
 
 *** Create Internal Load Balancer ***
+
     azure service internal-load-balancer add -t subnet-2 ncp-logstash logstash-ilb
 
 *** Generate cert/key ***
+
     openssl req -x509 -batch -nodes -newkey rsa:2048 -keyout logstash-forwarder.key -out logstash-forwarder.crt -subj /CN=ncp-logstash-cluster.cloudapp.net
 
 *** Test Logstash  ***
