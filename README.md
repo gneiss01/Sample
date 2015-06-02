@@ -21,6 +21,7 @@ Deploy to Azure
     openssl req -x509 -batch -nodes -newkey rsa:2048 -keyout logstash-forwarder.key -out logstash-forwarder.crt -subj /CN=ncp-logstash-cluster.cloudapp.net
 
 *** Test Logstash  ***
+
     docker pull ec2-54-169-239-164.ap-southeast-1.compute.amazonaws.com:5000/lumberjack-docker
     Update logstash forwarder configuration to use the same cert as logstash.
 
