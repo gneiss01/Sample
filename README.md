@@ -6,9 +6,12 @@ Deploy to Azure
 * You need azure-cli NPM package installed
 
 > Deploy Elastic Search
+    
+    Refer to elastic search documentation.
 
 * With following command you can deploy to new VM in Azure
-*** You can change parameters if required ***
+
+    *** You can change parameters if required ***
 
     time azure vm create --custom-data=cloud-config.yaml --ssh=22 --ssh-cert=go-agent-cert.pem  --no-ssh-password --vm-name=ncp-elk-stack-1 --location="West US" --vm-size="Medium" ncp-elk-stack 2b171e93f07c4903bcad35bda10acf22__CoreOS-Stable-607.0.0 ncpadmin
 
